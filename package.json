@@ -48,7 +48,7 @@
     "test": "jest",
     "cypress-open": "cypress open cypress run",
     "cypress-run": "cypress run cypress run",
-    "retry-prisma-start": "until pnpm prisma migrate deploy; do echo 'Retrying in 5s...'; sleep 5; done && pnpm start"
+    "retry-prisma-start": "until pnpm exec prisma migrate deploy; do echo 'Retrying in 5s...'; sleep 5; done && pnpm start"
 
   },
   "lint-staged": {
